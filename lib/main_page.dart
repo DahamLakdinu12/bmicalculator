@@ -40,13 +40,21 @@ class _MainPageState extends State<MainPage> {
                     child: Column(
                       children: [
                         Text(
+                          "Height",
+                          style: TextStyle(
+                            color: Color.fromARGB(255, 151, 23, 23),
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
                           "176",
                           style: TextStyle(
                             color: Color.fromARGB(255, 151, 23, 23),
                             fontSize: 50,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Text("Male"),
                       ],
                     ),
                   ),
@@ -54,7 +62,24 @@ class _MainPageState extends State<MainPage> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Column(
-                      children: [Icon(Icons.female, size: 150), Text("Female")],
+                      children: [
+                        Text(
+                          "weight",
+                          style: TextStyle(
+                            color: Color.fromARGB(255, 151, 23, 23),
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          "170",
+                          style: TextStyle(
+                            color: Color.fromARGB(255, 151, 23, 23),
+                            fontSize: 50,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ],
