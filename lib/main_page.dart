@@ -1,3 +1,4 @@
+import 'package:bmicalculator/constants.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {
@@ -12,117 +13,102 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Container(
-          color: Colors.white,
-          child: Column(
-            children: [
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Column(
-                      children: [Icon(Icons.male, size: 150), Text("Male")],
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Container(
+            color: Colors.white,
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        children: [Icon(Icons.male, size: 150), Text("Male")],
+                      ),
                     ),
-                  ),
-                  Spacer(),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Column(
-                      children: [Icon(Icons.female, size: 150), Text("Female")],
+                    Spacer(),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        children: [
+                          Icon(Icons.female, size: 150),
+                          Text("Female"),
+                        ],
+                      ),
                     ),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Column(
-                      children: [
-                        Text(
-                          "Height",
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 151, 23, 23),
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                  ],
+                ),
+                const SizedBox(height: 10),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        children: [
+                          Text("Height", style: kinputlablecolr),
+                          Text("176", style: kinputlablecolr),
+                          Row(
+                            children: [
+                              FloatingActionButton(
+                                onPressed: null,
+                                child: Icon(Icons.remove, size: 40),
+                              ),
+                              const SizedBox(width: 15),
+                              FloatingActionButton(
+                                onPressed: null,
+                                child: Icon(Icons.add, size: 40),
+                              ),
+                            ],
                           ),
-                        ),
-                        Text(
-                          "176",
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 151, 23, 23),
-                            fontSize: 50,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        Row(
-                          children: [
-                            FloatingActionButton(
-                              onPressed: null,
-                              child: Icon(Icons.remove, size: 40),
-                            ),
-                            const SizedBox(width: 15),
-                            FloatingActionButton(
-                              onPressed: null,
-                              child: Icon(Icons.add, size: 40),
-                            ),
-                          ],
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
-                  ),
-                  Spacer(),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Column(
-                      children: [
-                        const Text(
-                          "weight",
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 151, 23, 23),
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                    Spacer(),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        children: [
+                          const Text("weight", style: kinputlablecolr),
+                          const Text("170", style: kinputlablecolr),
+                          Row(
+                            children: [
+                              FloatingActionButton(
+                                onPressed: null,
+                                child: Icon(Icons.remove, size: 40),
+                              ),
+                              const SizedBox(width: 50),
+                              FloatingActionButton(
+                                onPressed: null,
+                                child: Icon(Icons.add, size: 40),
+                              ),
+                            ],
                           ),
-                        ),
-                        const Text(
-                          "170",
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 151, 23, 23),
-                            fontSize: 50,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        Row(
-                          children: [
-                            FloatingActionButton(
-                              onPressed: null,
-                              child: Icon(Icons.remove, size: 40),
-                            ),
-                            const SizedBox(width: 15),
-                            FloatingActionButton(
-                              onPressed: null,
-                              child: Icon(Icons.add, size: 40),
-                            ),
-                          ],
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
-                  ),
-                ],
-              ),
-              Column(
-                children: [
-                  Text(
-                    "BMI",
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                  ),
-                  Text(
-                    "22.00",
-                    style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
-                  ),
-                ],
-              ),
-            ],
+                  ],
+                ),
+                Column(
+                  children: [
+                    Text(
+                      "BMI",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text(
+                      "22.00",
+                      style: TextStyle(
+                        fontSize: 50,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),
