@@ -55,6 +55,19 @@ class _MainPageState extends State<MainPage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
+                        Row(
+                          children: [
+                            FloatingActionButton(
+                              onPressed: null,
+                              child: Icon(Icons.remove, size: 40),
+                            ),
+                            const SizedBox(width: 15),
+                            FloatingActionButton(
+                              onPressed: null,
+                              child: Icon(Icons.add, size: 40),
+                            ),
+                          ],
+                        ),
                       ],
                     ),
                   ),
@@ -63,7 +76,7 @@ class _MainPageState extends State<MainPage> {
                     padding: const EdgeInsets.all(8.0),
                     child: Column(
                       children: [
-                        Text(
+                        const Text(
                           "weight",
                           style: TextStyle(
                             color: Color.fromARGB(255, 151, 23, 23),
@@ -71,7 +84,7 @@ class _MainPageState extends State<MainPage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Text(
+                        const Text(
                           "170",
                           style: TextStyle(
                             color: Color.fromARGB(255, 151, 23, 23),
@@ -79,8 +92,33 @@ class _MainPageState extends State<MainPage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
+                        Row(
+                          children: [
+                            FloatingActionButton(
+                              onPressed: null,
+                              child: Icon(Icons.remove, size: 40),
+                            ),
+                            const SizedBox(width: 15),
+                            FloatingActionButton(
+                              onPressed: null,
+                              child: Icon(Icons.add, size: 40),
+                            ),
+                          ],
+                        ),
                       ],
                     ),
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  Text(
+                    "BMI",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    "22.00",
+                    style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
                   ),
                 ],
               ),
